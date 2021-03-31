@@ -11,10 +11,10 @@ from .Config import *
 from .AModel import *
 
 
-class pix2code(AModel):
+class pico(AModel):
     def __init__(self, input_shape, output_size, output_path):
         AModel.__init__(self, input_shape, output_size, output_path)
-        self.name = "pix2code"
+        self.name = "pico"
 
         image_model = Sequential()
         image_model.add(Conv2D(32, (3, 3), padding='valid', activation='relu', input_shape=input_shape))
