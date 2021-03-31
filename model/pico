@@ -34,13 +34,13 @@ base_path=${INPUT%/*}
 base_name=${INPUT##*/}
 file_name=${base_name%.*}
 
-rm -rf ../bin/pix2code.h5
-rm -rf ../bin/pix2code.json
+rm -rf ../bin/pico.h5
+rm -rf ../bin/pico.json
 rm -rf ../bin/meta_dataset.npy
 rm -rf ../bin/words.vocab
 
-cp ../results/${TARGET}_results/pix2code.h5 ../bin/
-cp ../results/${TARGET}_results/pix2code.json ../bin/
+cp ../results/${TARGET}_results/pico.h5 ../bin/
+cp ../results/${TARGET}_results/pico.json ../bin/
 cp ../results/${TARGET}_results/meta_dataset.npy ../bin/
 cp ../results/${TARGET}_results/words.vocab ../bin/
 
