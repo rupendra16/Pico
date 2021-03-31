@@ -6,7 +6,7 @@ import os
 import sys
 
 from classes.Sampler import *
-from classes.model.pix2code import *
+from classes.model.pico import *
 
 argv = sys.argv[1:]
 
@@ -25,7 +25,7 @@ meta_dataset = np.load("{}/meta_dataset.npy".format(trained_weights_path))
 input_shape = meta_dataset[0]
 output_size = meta_dataset[1]
 
-model = pix2code(input_shape, output_size, trained_weights_path)
+model = pico(input_shape, output_size, trained_weights_path)
 model.load(trained_model_name)
 
 sampler = Sampler(trained_weights_path, input_shape, output_size, CONTEXT_LENGTH)
