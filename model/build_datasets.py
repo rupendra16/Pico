@@ -75,8 +75,8 @@ for path in paths:
 
         hashes.append(content_hash)
 
-assert len(eval_set) == evaluation_samples_number
-assert len(train_set) == training_samples_number
+#assert len(eval_set) == evaluation_samples_number
+#assert len(train_set) == training_samples_number
 
 if not os.path.exists("{}/{}".format(os.path.dirname(input_path), EVALUATION_SET_NAME)):
     os.makedirs("{}/{}".format(os.path.dirname(input_path), EVALUATION_SET_NAME))
